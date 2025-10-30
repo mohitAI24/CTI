@@ -5,25 +5,25 @@ import { Network, AlertCircle, Share2, Zap } from "lucide-react"
 const features = [
   {
     icon: Network,
-    title: "Unify Threat Intelligence",
+    title: "Real-Time Threat Intelligence",
     description:
-      "Consolidate your disparate threat feeds into a centralized platform with 300+ integrations, using a consistent STIX 2.1 data model, powerful visualizations and custom dashboards.",
+      "Instantly detect and track emerging cyber threats with live intelligence feeds.",
   },
   {
     icon: AlertCircle,
-    title: "Reduce Alert Fatigue",
+    title: "Advanced Attack Surface Monitoring",
     description:
-      "Benefit from automation and XTM Agentic AI for faster processing of the entire threat management cycle plus generate finished TI reports in minutes NOT Hours OR Days.",
+      "Continuously map, monitor, and secure your digital footprint.",
   },
   {
     icon: Share2,
-    title: "Make Threat Intelligence Actionable",
-    description: "Role based sharing and dissemination across teams and tools for timely action.",
+    title: "AI-Driven Threat Analysis",
+    description: "Leverage machine learning to identify, prioritize, and neutralize risks faster.",
   },
   {
     icon: Zap,
-    title: "Streamline Incident Response",
-    description: "Utilize case management capabilities for incident-related data and accelerate your investigations.",
+    title: "Actionable Security Insights",
+    description: "Get clear, data-driven alerts and reports that empower rapid response.",
   },
 ]
 

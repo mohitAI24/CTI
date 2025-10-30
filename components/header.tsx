@@ -9,17 +9,21 @@ export default function Header() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
   const dropdownContent = {
-    platforms: ["OpenCTI", "XTM Suite", "OpenBAS", "Agentic AI"],
-    offerings: [
-      "Software as a Service",
-      "Support and Services",
-      "OpenCTI Enterprise Edition",
-      "Filigran Academy Training",
+    platforms: [
+      "Proactive Threat Hunting", 
+      "Incident Response Acceleration", 
+      "Attack Surface Monitoring", 
+      "Threat Actor & IOC Tracking", 
+      "Security Operations Enrichment (SOC)", 
+      "Brand & Infrastructure Protection"],
+    CTI: [
+      "What is CTI?",
+      "Cyber Threat Intelligence (CTI) is the collection, analysis, and sharing of data about potential and active cyber threats. It helps organizations understand attackers, anticipate risks, and take proactive security measures to protect their digital assets.",
     ],
-    CTI:
-      "Consolidate your disparate threat feeds into a centralized platform with 300+ integrations, using a consistent STIX 2.1 data model.",
-    company:
-      "Filigran provides open-source cybersecurity solutions covering threat intelligence management, breach and attack simulation, and cyber risk management.",
+    About_us:
+      "At Trace X, we empower organizations with cutting-edge Cyber Threat Intelligence to stay ahead of evolving digital threats. Our platform combines real-time data collection, AI-driven analysis, and advanced monitoring to deliver actionable insights with unmatched speed and accuracy. Unlike traditional security tools, Trace X offers proactive detection, deep visibility, and automated threat correlation, enabling faster and smarter responses. Whether you’re protecting a business, brand, or infrastructure, Trace X provides a secure, scalable, and efficient solution designed to outpace cyber adversaries and give you a strategic security advantage",
+    Contant_us:
+      "Filigran@gmail.com",
   }
 
   return (
@@ -65,7 +69,7 @@ export default function Header() {
                   <ChevronDown size={16} />
                 </button>
                 <div className="absolute left-0 mt-0 w-56 bg-slate-900/95 border border-slate-700 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
-                  {(dropdownContent.offerings as string[]).map((item) => (
+                  {(dropdownContent.CTI as string[]).map((item) => (
                     <Link
                       key={item}
                       href="#"
@@ -89,7 +93,7 @@ export default function Header() {
                   <ChevronDown size={16} />
                 </button>
                 <div className="absolute left-0 mt-0 w-64 bg-slate-900/95 border border-slate-700 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-4">
-                  <p className="text-slate-300 text-sm leading-relaxed">{dropdownContent.CTI}</p>
+                  <p className="text-slate-300 text-sm leading-relaxed">{dropdownContent.About_us}</p>
                 </div>
               </div>
 
@@ -100,7 +104,7 @@ export default function Header() {
                   <ChevronDown size={16} />
                 </button>
                 <div className="absolute left-0 mt-0 w-64 bg-slate-900/95 border border-slate-700 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-4">
-                  <p className="text-slate-300 text-sm leading-relaxed">{dropdownContent.company}</p>
+                  <p className="text-slate-300 text-sm leading-relaxed">{dropdownContent.Contant_us}</p>
                 </div>
               </div>
 
